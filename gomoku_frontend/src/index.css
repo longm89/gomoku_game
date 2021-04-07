@@ -1,0 +1,83 @@
+h1,h2,h3,p {
+  text-align: center;
+}
+.heading {
+  margin-bottom: 3em;
+}
+.boardRow {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.square {
+  width: 2.5vw;
+  height: 2.5vw;
+  line-height:2.5vw;
+  text-align: center;
+  padding: 0;
+  border: 1px solid #999;
+}
+.hightLight {
+  font-weight: 900;
+}
+.winning {
+  color:black;
+}
+.normal {
+  color: -internal-light-dark(black, white);
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+}
+.scoreRow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.computerScore,.humanScore {
+  padding: 1em;
+  padding-top: 0em;
+}
+.board_and_info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 25vw;
+}
+.scoreStat{
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .total_game {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .board_and_info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .square {
+    width: 2.5vh;
+    height: 2.5vh;
+    line-height: 2.5vh;
+    text-align: center;
+  }
+  .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 80vw;
+    padding: 0;
+  } 
+  .computerScore,.humanScore {
+    padding: 0em;
+  }
+  .heading {
+    margin-bottom: 0em;
+  }
+}

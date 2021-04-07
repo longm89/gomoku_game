@@ -1,0 +1,6 @@
+PUT http://localhost:3001/api/scores/humanScore
+Content-Type: application/json
+
+{
+    "score": 1
+}
