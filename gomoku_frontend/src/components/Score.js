@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 const Score = (props) =>
-  <div>
+  <div className="score">
     <h2>Scores</h2>
     <div className = "scoreRow">
       <div className = "humanScore">
         <h3>Human</h3>
-        <p>{props.humanScore}</p>
+        {props.humanScore}
       </div>
       <div className = "computerScore">
         <h3>Computer</h3>
-        <p>{props.computerScore}</p>
+        {props.computerScore}
       </div>
     </div>
   </div>;

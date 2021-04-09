@@ -80,14 +80,8 @@ const Game = () => {
         />
 
         <div className="info">
-          <div className="status">
-            <Status squares={squares} xIsNext={humanIsNext}/>
-          </div>
-
-          <div className="score">
-            <Score humanScore={humanScore} computerScore={computerScore}/>
-          </div>
-
+          <Status squares={squares} xIsNext={humanIsNext}/>
+          <Score humanScore={humanScore} computerScore={computerScore}/>
           <button onClick={reStart}
             style={restartButtonStyle}
           >

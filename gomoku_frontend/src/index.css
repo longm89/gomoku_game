@@ -9,12 +9,17 @@ h1,h2,h3,p {
   flex-flow: row nowrap;
 }
 .square {
-  width: 2.5vw;
-  height: 2.5vw;
-  line-height:2.5vw;
+  width: 2.7vw;
+  height: 2.7vw;
+  line-height: 2.7vw;
   text-align: center;
   padding: 0;
-  border: 1px solid #999;
+  font-size: 1em;
+  border: 1px solid #C0C0C0;
+}
+.square:focus {outline: 0;}
+.kbd-navigation .square:focus {
+  background: #ddd;
 }
 .hightLight {
   font-weight: 900;
@@ -22,19 +27,14 @@ h1,h2,h3,p {
 .winning {
   color:black;
 }
-.normal {
-  color: -internal-light-dark(black, white);
-  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-}
 .scoreRow {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 .computerScore,.humanScore {
-  padding: 1em;
-  padding-top: 0em;
+  padding: 0;
 }
 .board_and_info {
   display: flex;
@@ -47,9 +47,20 @@ h1,h2,h3,p {
   justify-content: space-between;
   width: 25vw;
 }
+.score {
+  padding: 0;
+}
+.score > h2 {
+  margin: 0;
+}
+
+.status h2 {
+  margin: 0;
+}
 .scoreStat{
   font-weight: bold;
 }
+
 @media only screen and (max-width: 768px) {
   .total_game {
     display: flex;
