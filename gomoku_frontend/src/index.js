@@ -8,6 +8,7 @@ import Welcome from './components/Welcome';
 import Score from './components/Score';
 import Board from './components/Board';
 import Status from './components/Status';
+import Statistics from './components/Statistics';
 import Footer from './components/Footer';
 import scoreService from './scoreServices';
 export const size = 15;
@@ -87,7 +88,8 @@ const Game = () => {
           >
             {calculateWinner(squares) === null ? 'Restart the game ? ':'Another game ?'}
           </button>
-          <Footer scores={totalScores}/>
+          <Statistics scores={totalScores}/>
+          <Footer />
         </div>
 
       </div>

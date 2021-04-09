@@ -18,7 +18,7 @@ const Status = (props) => {
         : props.xIsNext ?
           <div>
             <h2>Next player</h2>
-            <p>Human (X): Click on a square to play</p>
+            <p>Human (X): Click on any square to play</p>
           </div> :
           <div>
             <h2>Next player</h2>
