@@ -24,7 +24,7 @@ const Game = () => {
 
   useEffect(() => {
     scoreService.getAll() // get the current scores from the database
-      .then(scores => {setTotalScores(scores); console.log('The scores is ', scores);});
+      .then(scores => {setTotalScores(scores); });
   }, []);
 
   // The function findNextMove contains a heavy calculation, to calculate the next more for the

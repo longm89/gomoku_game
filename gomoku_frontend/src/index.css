@@ -14,7 +14,7 @@ h1,h2,h3,p {
   line-height: 2.6vw;
   text-align: center;
   padding: 0;
-  font-size: 1em;
+  font-size: 1.6vw;
   border: 1px solid #C0C0C0;
 }
 .square:focus {outline: 0;}
@@ -32,9 +32,11 @@ h1,h2,h3,p {
   flex-flow: row nowrap;
   justify-content: space-around;
   text-align: center;
+
 }
-.computerScore,.humanScore {
-  padding: 0;
+.computerScore, .humanScore {
+  padding: 1em;
+
 }
 .board_and_info {
   display: flex;
@@ -45,7 +47,9 @@ h1,h2,h3,p {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  align-items: center;
   width: 25vw;
+
 }
 .score {
   padding: 0;
@@ -115,22 +119,27 @@ h1,h2,h3,p {
     align-items: center;
   }
   .square {
-    width: 2.5vh;
-    height: 2.5vh;
-    line-height: 2.5vh;
+    width: 2.5vw;
+    height: 2.5vw;
+    line-height: 2.5vw;
     text-align: center;
+    font-size: 1.6vw;
   }
   .info {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
     width: 80vw;
     padding: 0;
   } 
-  .computerScore,.humanScore {
-    padding: 0em;
+  .computerScore, .humanScore {
+    padding-top: 0em;
   }
   .heading {
     margin-bottom: 0em;
+  }
+  .statistics {
+    margin-top: 1em;
   }
 }
